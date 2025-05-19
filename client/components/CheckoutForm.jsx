@@ -40,14 +40,7 @@ export default function CheckoutForm({ bookingId, clientSecret }) {
         {loading ? 'Processing...' : 'Pay Now'}
       </button>
       <button
-        onClick={async () => {
-          await fetch('/api/cancel-booking', {
-            method: 'POST',
-            body: JSON.stringify({ bookingId }),
-            headers: { 'Content-Type': 'application/json' }
-          });
-
-          window.location.href = '/booking'; // or homepage, etc.
+        onClick={() => window.location.href = '/book';
         }}
         className="text-red-500 underline"
       >
