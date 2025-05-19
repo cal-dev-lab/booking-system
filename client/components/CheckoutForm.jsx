@@ -40,8 +40,7 @@ export default function CheckoutForm({ bookingId, clientSecret }) {
         {loading ? 'Processing...' : 'Pay Now'}
       </button>
       <button
-        onClick={() => window.location.href = '/book';
-        }}
+        onClick={() => window.location.href = '/book'}
         className="text-red-500 underline"
       >
         Cancel Booking
